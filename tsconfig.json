@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "module": "commonjs",
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "allowSyntheticDefaultImports": true,
+        "outDir": "lib",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strictNullChecks": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "rootDir": ".",
+        "jsx": "preserve",
+        "allowJs": true,
+        "resolveJsonModule": true,
+        "paths": {
+            "~/*": ["./*"],
+            "@/*": ["./src/*"]
+        },
+        "typeRoots": ["node_modules/@types", "global.d.ts", "@tarojs/components/vue3"]
+    },
+    "include": ["./src", "./types", "components.d.ts"],
+    "exclude": ["node_modules", "dist"],
+    "compileOnSave": false
+}
